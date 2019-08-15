@@ -1,3 +1,4 @@
+package TP1;
 import javax.swing.*;
 public class ofage {
 	
