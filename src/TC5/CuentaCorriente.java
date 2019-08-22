@@ -13,7 +13,10 @@ public class CuentaCorriente {
 	}
 	
 	public static void main(String args[]){
-		CuentaCorriente cuenta1 = new CuentaCorriente("Facu", 23, 532);
+		
+		
+		
+		CuentaCorriente cuenta1 = new CuentaCorriente("Facu", 123, 345);
 	}
 
 }
