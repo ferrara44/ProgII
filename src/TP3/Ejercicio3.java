@@ -55,11 +55,10 @@ public class Ejercicio3 {
 		 */
 		
 		Arrays.sort(matrix, new Comparator<String[]>() {
-            @Override
-            public int compare(final String[] entry1, final String[] entry2) {
-                final String time1 = entry1[0];
-                final String time2 = entry2[0];
-                return time1.compareTo(time2);
+            public int compare(String[] n1, String[] n2) {
+                String name1 = n1[0];
+                String name2 = n2[0];
+                return name1.compareTo(name2);
             }
         });
 		

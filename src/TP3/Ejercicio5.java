@@ -9,16 +9,15 @@ public class Ejercicio5 {
 		int[][]matrix = new int[3][3];
 		int []arr = new int [9];
 		int pos = 0;
-		
 		Scanner scan = new Scanner(System.in);
-		
+		//Generate the matrix.
 		for(int i=0 ; i<3 ; i++) {
 			for(int j=0 ; j<3 ; j++) {
 				System.out.println("Enter a number for position ["+i+"]["+j+"]");
 				matrix[i][j]=scan.nextInt();
 			}
 		}
-		
+		//Prepare for sorting.
 		for(int i=0 ; i<3 ; i++) {
 			for(int j=0 ; j<3 ; j++) {
 				arr[pos] = matrix[i][j];
@@ -28,15 +27,14 @@ public class Ejercicio5 {
 		
 		System.out.println();
 		System.out.println();
-		Arrays.sort(arr);
+		Arrays.sort(arr); //Sorting
 		
-		
-		for (int lft=0, rgt=arr.length-1; lft<rgt; lft++, rgt--) {
-		    int tmp = arr[lft]; arr[lft] = arr[rgt]; arr[rgt] = tmp;
+		//Reorder using a looped swapping algo.
+		for (int l=0, r=(arr.length-1); l<r; l++, r--) {
+		    int buffer = arr[l]; arr[l] = arr[r]; arr[r] = buffer;
 		}
-		
+		//Reconstruct the matrix.
 		pos=0;
-		
 		for(int i=0 ; i<3 ; i++) {
 			for(int j=0 ; j<3 ; j++) {
 				matrix[i][j] = arr[pos];

@@ -1,10 +1,7 @@
 package TP3;
 
 import java.util.Arrays;
-/* 
- * This is solved by turning the matrix into an array then into matrix again.
- * Not very elegant or memory efficient. But it gets the job done.
- */
+
 public class Ejercicio4 {
 	public static void main(String[] args) {
 		
