@@ -1,7 +1,6 @@
 package TP3;
 
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.Scanner;
 
 public class Ejercicio5 {
@@ -41,10 +40,11 @@ public class Ejercicio5 {
 		for(int i=0 ; i<3 ; i++) {
 			for(int j=0 ; j<3 ; j++) {
 				matrix[i][j] = arr[pos];
-				System.out.print(matrix[i][j]+" ");
+				System.out.print(matrix[i][j]+"\t");
 				pos++;
 			}
 			System.out.println();
 		}
+		scan.close();
 	}
 }

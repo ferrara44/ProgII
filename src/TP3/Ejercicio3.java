@@ -5,7 +5,7 @@ import java.util.Comparator;
 import java.util.ArrayList;
 import java.util.Scanner;
 /*
- * Let's get that bonus.
+ * Bonus: Yes.
  */
 public class Ejercicio3 {
 	public static void main(String[] args) {
@@ -49,13 +49,6 @@ public class Ejercicio3 {
 		}
 		
 		System.out.println();
-		
-		for (int j=0 ; j<3 ; j++) {
-			for (int i=0 ; i<=log ; i++) {
-				System.out.print(matrix[i][j]+"\t");
-			}
-			System.out.println();
-		}
 		
 		/*
 		 * At this point we have our 2D array and can start sorting it.

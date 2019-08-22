@@ -5,6 +5,8 @@ import java.util.ArrayList;
  *  Here I used ArrayList because it's
  *	more time and space efficient.
  *	While also providing dynamic array size.
+ *
+ *	Bonus: Yes.
  */
 public class Ejercicio1 {
 	public static void main(String[] args) {
