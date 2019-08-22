@@ -1,31 +1,28 @@
 package TP3;
 
 import java.util.Arrays;
-/* 
- * This is solved by turning the matrix into an array then into matrix again.
- * Not very elegant or memory efficient. But it gets the job done.
- */
-public class Ejercicio4 {
+import java.util.Collections;
+import java.util.Scanner;
+
+public class Ejercicio5 {
 	public static void main(String[] args) {
 		
 		int[][]matrix = new int[3][3];
 		int []arr = new int [9];
 		int pos = 0;
 		
+		Scanner scan = new Scanner(System.in);
+		
 		for(int i=0 ; i<3 ; i++) {
 			for(int j=0 ; j<3 ; j++) {
-				matrix[i][j]=(int)(Math.random()*100);
-				System.out.print(matrix[i][j]+" ");
+				System.out.println("Enter a number for position ["+i+"]["+j+"]");
+				matrix[i][j]=scan.nextInt();
 			}
-			System.out.println();
 		}
-		
-		System.out.println();
 		
 		for(int i=0 ; i<3 ; i++) {
 			for(int j=0 ; j<3 ; j++) {
 				arr[pos] = matrix[i][j];
-				System.out.print(arr[pos]+" ");
 				pos++;
 			}
 		}
@@ -33,6 +30,12 @@ public class Ejercicio4 {
 		System.out.println();
 		System.out.println();
 		Arrays.sort(arr);
+		
+		
+		for (int lft=0, rgt=arr.length-1; lft<rgt; lft++, rgt--) {
+		    int tmp = arr[lft]; arr[lft] = arr[rgt]; arr[rgt] = tmp;
+		}
+		
 		pos=0;
 		
 		for(int i=0 ; i<3 ; i++) {
@@ -45,4 +48,3 @@ public class Ejercicio4 {
 		}
 	}
 }
-
