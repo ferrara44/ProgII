@@ -27,5 +27,6 @@ public class Ejercicio2 {
 			}
 		}
 		System.out.println(acu/5);
+		integerscan.close();
 	}
 }

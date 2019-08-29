@@ -36,5 +36,6 @@ public class Ejercicio1 {
 		System.out.println(zero+" occurrences of 0");
 		System.out.println(pos+" occurrences of positive values.");
 		System.out.println(neg+" occurrences of negative values.");
+		integerscan.close();
 	}
 }
