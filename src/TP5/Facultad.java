@@ -1,5 +1,13 @@
 package TP5;
 
+/*
+ * Integrantes:
+ * Verza Esteban Josué
+ * Facundo Luís Ferrara
+ * Pedro Villalba
+ * Neston Laurore
+ */
+
 import java.util.Scanner;
 /*
  * Facultad, con los siguientes métodos

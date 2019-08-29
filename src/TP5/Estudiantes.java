@@ -1,5 +1,13 @@
 package TP5;
 
+/*
+ * Integrantes:
+ * Verza Esteban Josué
+ * Facundo Luís Ferrara
+ * Pedro Villalba
+ * Neston Laurore
+ */
+
 public class Estudiantes {
 
 	private String name;
