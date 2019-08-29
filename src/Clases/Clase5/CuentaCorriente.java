@@ -16,7 +16,7 @@ public class CuentaCorriente {
         int id;
 
         for (int i=0;   i<customers.length;  i++){
-            System.out.println("Enter a name for the owner of account N°" +(i+1)+ ".");
+            System.out.println("Enter a name for the owner of account Nï¿½" +(i+1)+ ".");
             String name = scan.next();
             System.out.println("Please enter a starting balance for this account.");
             double startingBalance = scan.nextDouble();
@@ -60,7 +60,7 @@ public class CuentaCorriente {
                     id = scan.nextInt();
                     if (id == 1 || id == 2){
                         System.out.println("Current balance for this account is $" + customers[id-1].getBalance());
-                    }else System.out.println("Error. Cuenta no valida");
+                    }else System.out.println("Invalid ID.");
                     break;
                 }
                 case 4:{
