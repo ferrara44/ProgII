@@ -39,10 +39,10 @@ public class Generate{
     }
     
     public boolean getSafety(){
-        int uppercase=0, lowercase=0,numbers=0;
+        int uppercase=0, lowercase=0, numbers=0;
         for (int i=0 ; i<characters ; i++){
-            if (Character.isUpperCase(passwords.charAt(i)))numbers+=1;
-            else if (Character.isLowerCase(passwords.charAt(i)))uppercase+=1;
+            if (Character.isUpperCase(passwords.charAt(i)))uppercase+=1;
+            else if (Character.isLowerCase(passwords.charAt(i)))lowercase+=1;
             else numbers+=1;
         }
         
