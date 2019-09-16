@@ -86,6 +86,7 @@ public class CuentaCorriente {
 
         }
 
+        scan.close();
     }
     
     public CuentaCorriente(String customer, double balance){
@@ -121,5 +122,6 @@ public class CuentaCorriente {
         this.balance -= value;
         payee.balance += value;
     }
+    
 
 }
