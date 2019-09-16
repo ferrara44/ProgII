@@ -5,9 +5,9 @@ public class Generate{
 	String passwords = "";
     private int characters;
 
-    public Generate(int chosenLength){
-        this.characters = chosenLength;
-        for (int i = 0; i<chosenLength; i++){
+    public Generate(int strLen){
+        this.characters = strLen;
+        for (int i=0 ; i<strLen ; i++){
             switch((int) Math.floor(Math.random()*(3))) {
                 case 0: this.passwords += genNumber();   break;
                 case 1: this.passwords += genLowercase();   break;
