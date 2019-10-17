@@ -1,25 +1,30 @@
-/*
- * Copyright (C) 2019 kartdei
- *
- * This program is free software: you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation, either version 3 of the License, or
- * (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program.  If not, see <http://www.gnu.org/licenses/>.
- */
+
 package tfi01;
 
 /**
  *
  * @author kartdei
  */
-public class Acomodadores {
+public class Acomodadores extends Empleados implements ParaAcomodadores {
     
+    Salas sala;
+    
+    public Acomodadores(String nombre, int edad, int sueldo) {
+        super(nombre, edad, sueldo);
+    }
+    
+    public Acomodadores(String nombre, int edad, int sueldo, Salas sala) {
+        super(nombre, edad, sueldo);
+        this.sala = sala;
+    }
+    
+    @Override
+    public Salas getSala(){
+        return this.sala;
+    }
+    
+    @Override
+    public void setSala(Salas sala){
+        this.sala = sala;
+    }
 }
